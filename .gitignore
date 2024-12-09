@@ -7,4 +7,3 @@ venv
 .DS_store
 db/
 *.xlsx
-*.py
