@@ -1,0 +1,10 @@
+*.swo
+*.swp
+.env
+*.sh
+__pycache__
+venv
+.DS_store
+db/
+*.xlsx
+*.py

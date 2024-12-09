@@ -1,0 +1,15 @@
+{"question": "I can take 10 credits and be a full time student", "answer": "False"}
+{"question": "First-year students at Harvey Mudd are not allowed to overload during their first semester.", "answer": "True"}
+{"question": "Is there a joint Major in Engineering and Computer Science", "answer": "False"}
+{"question": "Joint Major in Computer Science and Physics has Physics Colloquium in graduation requirement", "answer": "True"}
+{"question": "There is no prerequisite for CSCI005", "answer": "True"}
+{"question": "I finished CSCI005GR and I meet the prerequisite for CSCI035", "answer": "True"}
+{"question": "There is no math content in CSCI081", "answer": "False"}
+{"question": "I don't need to take CSCI060 if I finished CSCI042", "answer": "True"}
+{"question": "CSCI155 has no MATH prerequisites", "answer": "False"}
+{"question": "I can take CSCI183 in junior standing without special permission or approval", "answer": "False"}
+{"question": "CSCI131 is offered in both Fall and Spring", "answer": "True"}
+{"question": "CSCI132 is taught by Bernoff and Talvitie", "answer": "False"}
+{"question": "CSCI133 recommends but does not require CSCI081", "answer": "True"}
+{"question": "CSCI140 is cross-listed as MATH164", "answer": "False"}
+{"question": "CSCI151 introduces text classification", "answer": "True"}
