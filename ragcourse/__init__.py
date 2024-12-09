@@ -7,10 +7,6 @@ New articles can be added to the database with the --add_url parameter,
 and the path to the database can be changed with the --db parameter.
 '''
 
-import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from datetime import datetime
 import random
 import logging
 import re
@@ -152,6 +148,10 @@ def text_split(text, sizeLimit):
 # Crawl website
 ################################################################################
 def fetch_page_data(url):
+    import requests
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+    from datetime import datetime
     # Send an HTTP GET request to the URL
     try:
         response = requests.get(url)
