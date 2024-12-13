@@ -11,6 +11,7 @@ import random
 import logging
 import re
 import sqlite3
+import time
 from sqlite3 import OperationalError
 
 import groq
@@ -71,6 +72,7 @@ def extract_keywords(text, model = "llama-3.1-70b-versatile", seed=None):
         return key
     else:
         while True:
+            key = key.replace(',', ' ')
             listing = key.split(" ")
             if len(listing) < 10 :
                 break
@@ -90,6 +92,7 @@ def recursive_summary(text, sizeLimit, model = "llama-3.1-70b-versatile"):
         system = 'Summarize the input text below. Output in English.'
         for paragraph in textList:
             newText += run_llm(system, paragraph, model=model) + "\n\n"
+            time.sleep(1)
         text = newText
     return text
 
@@ -239,7 +242,7 @@ def rag(text, db, keywords_text=None, model = "llama-3.1-70b-versatile"):
             anwser = run_llm(system, user, model = model)
             return anwser
         except:
-            sources = recursive_summary(sources, len(sources)/2, model = model)
+            sources = recursive_summary(sources, len(sources)/4, model = model)
 
 class ArticleDB:
     '''

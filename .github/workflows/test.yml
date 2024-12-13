@@ -26,4 +26,4 @@ jobs:
           pip install groq
       - name: test ragnews
         run: |
-          python3 ragcourse/evaluate.py --model=llama3-groq-70b-8192-tool-use-preview
+          python3 ragcourse/__init__.py < test_input
